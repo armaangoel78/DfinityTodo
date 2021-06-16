@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "hello": {
-      "main": "src/hello/main.mo",
+    "todo": {
+      "main": "src/todo/main.mo",
       "type": "motoko"
     },
-    "hello_assets": {
+    "todo_assets": {
       "dependencies": [
-        "hello"
+        "todo"
       ],
       "frontend": {
-        "entrypoint": "src/hello_assets/src/index.html"
+        "entrypoint": "src/todo_assets/src/index.html"
       },
       "source": [
-        "src/hello_assets/assets",
-        "dist/hello_assets/"
+        "src/todo_assets/assets",
+        "dist/todo_assets/"
       ],
       "type": "assets"
     }

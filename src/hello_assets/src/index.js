@@ -6,7 +6,8 @@ const hello = Actor.createActor(hello_idl, { agent, canisterId: hello_id });
 
 document.getElementById("clickMeBtn").addEventListener("click", async () => {
   const name = document.getElementById("name").value.toString();
-  const greeting = await hello.greet(name);
+  await hello.update();
+  const greeting = hello.get();
 
   document.getElementById("greeting").innerText = greeting;
 });
